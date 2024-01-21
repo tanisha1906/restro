@@ -1,0 +1,99 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+						initial-scale=1.0">
+	<title> Login and Signup Page </title>
+	<link rel="stylesheet"
+		href="./login.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="title">Login Page</h1>
+	</header>
+
+	
+	<div class="container">
+
+		
+		<div class="slider"></div>
+		<div class="btn">
+			<button class="login">Login</button>
+			<button class="signup">Signup</button>
+		</div>
+
+		
+		<div class="form-section">
+
+			
+			<form action="/login" method="post">
+				<div class="row">
+					<% if (messages.error) { %>
+						<div class="alert alert-danger">
+						  <strong><%= messages.error %> </strong>
+						</div>
+					  <% } %> 
+				</div>
+			<div class="login-box">
+				<input type="email"
+					class="email ele"
+					name="email"
+					placeholder="Enter your Email :">
+				<input type="password"
+					class="password ele"
+					name="password"
+					placeholder="Enter your Password :">
+				<button type="submit" class="clkbtn">Login</button>
+				<h3 class="text">Don't have an account?	<a class="ll" href="http://localhost:8888/signup.html">Sign Up</a></h3>
+			</div>
+		</form>
+		</div>
+	</div>
+	<script src="./login.js"></script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Signup Page</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="title">Login Page</h1>
+    </header>
+
+    <div class="container">
+        
+        
+
+        <div class="form-section">
+            <!-- Login Form -->
+            <form action="/login" method="post">
+                <div class="row">
+                    <!-- Check if there is an error message -->
+                    <!-- Replace EJS syntax with plain HTML -->
+                    
+                </div>
+                <div class="login-box">
+                    <input type="email" class="email ele" name="email" placeholder="Enter your Email :">
+                    <input type="password" class="password ele" name="password" placeholder="Enter your Password :">
+                    <button type="submit" class="clkbtn">Login</button>
+                    <h3 class="text">Don't have an account? <a class="ll" href="http://localhost:8888/signup.html">Sign Up</a></h3>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+
+</html>

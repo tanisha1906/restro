@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, 
+						initial-scale=1.0">
+	<title>  Signup Page </title>
+	<link rel="stylesheet"
+		href="./signup.css">
+</head>
+
+<body>
+	<header>
+		<h1 class="title">Signup Page</h1>
+	</header>
+
+	
+	<div class="container">
+        
+        <div class="form-section">
+             
+			<!--Signup Form-->
+		<form action="/signup" method="post">
+			<div class="signup-box">
+				<input type="text"
+					class="name ele"
+					name="name"
+					placeholder="Enter your name :">
+				<input type="email"
+					class="email ele"
+					name="email"
+					placeholder="Enter your Email :">
+				<input type="password"
+					class="password ele"
+					name="password"
+					placeholder="Enter your Password :">
+				<!-- Update this line to include correct class name -->
+<input type="password" class="password ele" name="cpassword" placeholder="Confirm password :">
+
+				<button type="submit" class="clkbtn">Signup</button>
+                <h3 class="text">Already have an account?       <a class="ll" href="http://localhost:8888/login.html">Login</a></h3>
+			</div>
+        </form>
+		</div>
+	</div>
+	<script src="./signup.js"></script>
+    
+</body>
+</html>
