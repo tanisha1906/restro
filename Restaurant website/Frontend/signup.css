@@ -217,6 +217,7 @@ header {
 		height: 50px;
 		width: 130px;
 		font-size: 19px;
+		text-decoration-style: none;
 	}
 }
 
